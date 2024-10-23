@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roland Tone Engine Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roland Tone Engine Comparison</h1>
+        <div class="player-controls">
+            <button id="playPause">Play</button>
+            <label for="pianoSelect">Switch Piano:</label>
+            <select id="pianoSelect">
+                <option value="piano1">Piano 1</option>
+                <option value="piano2">Piano 2</option>
+                <option value="piano3">Piano 3</option>
+                <option value="piano4">Piano 4</option>
+            </select>
+            <button id="restart">Restart</button>
+            <button id="revealAnswer">Reveal Answer</button>
+        </div>
+        <div class="timer">
+            <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+        </div>
+        <div id="answerKey" class="hidden">
+            <h2>Answer Key</h2>
+            <ul>
+                <li>Piano 1: Roland FANTOM 8 - V-Piano Engine - Stage Grand</li>
+                <li>Piano 2: Roland FANTOM 8 - ZEN-Core Engine - Acoustic Pop Piano 1</li>
+                <li>Piano 3: Roland FP-30X - SuperNATURAL Engine - Concert Piano</li>
+                <li>Piano 4: Roland FP90X - PureAcoustic Engine - Default</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
